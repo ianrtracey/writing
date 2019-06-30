@@ -10,11 +10,17 @@ class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    let header
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1 className="f1 fw7 tc pa0 ma0">
+    const menuItems = [
+      { text: "HOME", link: "/" },
+      { text: "WRITING", link: "/writing" },
+      { text: "SPEAKING", link: "/speaking" },
+      { text: "CONTACT", link: "/contact" },
+    ]
+
+    const header = (
+      <header>
+        <h1 className="f1 sans-serif fw7 tc pa0 ma0 link dim">
           <Link
             style={{
               boxShadow: `none`,
@@ -26,28 +32,15 @@ class Layout extends React.Component {
             {title}
           </Link>
         </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      )
-    }
+        <div className="mw6 center flex justify-between mt4 sans-serif fw4">
+          {menuItems.map(mi => (
+            <Link style={{ textDecoration: "none" }} to={mi.link}>
+              {mi.text}
+            </Link>
+          ))}
+        </div>
+      </header>
+    )
     return (
       <div
         style={{
