@@ -13,33 +13,42 @@ class Layout extends React.Component {
 
     const menuItems = [
       { text: "HOME", link: "/" },
-      { text: "WRITING", link: "/writing" },
+      { text: "ABOUT", link: "/writing" },
       { text: "SPEAKING", link: "/speaking" },
       { text: "CONTACT", link: "/contact" },
     ]
 
     const header = (
-      <header>
+      <div
+        style={{
+          fontFamily: "Raleway",
+        }}
+      >
         <h1 className="f1 sans-serif fw7 tc pa0 ma0 link dim">
           <Link
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
               color: `inherit`,
+              fontFamily: "Raleway",
             }}
             to={`/`}
           >
             {title}
           </Link>
         </h1>
-        <div className="mw6 center flex justify-between mt4 sans-serif fw4">
+        <div className="f4 tc pa2 black-50">Absurdity for an absurd world</div>
+        <div className="mw6 center flex justify-between mt3 sans-serif fw4">
           {menuItems.map(mi => (
-            <Link style={{ textDecoration: "none" }} to={mi.link}>
+            <Link
+              style={{ textDecoration: "none", fontFamily: "Raleway" }}
+              to={mi.link}
+            >
               {mi.text}
             </Link>
           ))}
         </div>
-      </header>
+      </div>
     )
     return (
       <div
@@ -51,12 +60,14 @@ class Layout extends React.Component {
         }}
       >
         <header>{header}</header>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <main
+          style={{
+            marginTop: "4em",
+          }}
+        >
+          {children}
+        </main>
+        <footer></footer>
       </div>
     )
   }

@@ -20,19 +20,38 @@ class BlogIndex extends React.Component {
             <div key={node.fields.slug}>
               <h3
                 style={{
-                  marginBottom: rhythm(1 / 4),
+                  fontFamily: "Raleway",
                 }}
+                className="f3 sans-serif ma0 pb1 black"
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link
+                  className="black-90 f3"
+                  style={{ boxShadow: `none` }}
+                  to={node.fields.slug}
+                >
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <div className="mb1">
+                <small
+                  style={{
+                    fontFamily: "Montserrat",
+                  }}
+                >
+                  {node.frontmatter.date}
+                </small>
+              </div>
               <p
+                style={{
+                  fontFamily: "Montserrat",
+                }}
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
               />
+              {/* <Link to={node.fields.slug}>
+                <p className="fl black-60 link dim">Read more →</p>
+              </Link> */}
             </div>
           )
         })}
