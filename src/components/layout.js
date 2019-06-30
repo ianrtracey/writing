@@ -44,7 +44,12 @@ class Layout extends React.Component {
               style={{ textDecoration: "none", fontFamily: "Raleway" }}
               to={mi.link}
             >
-              {mi.text}
+              <p
+                style={{ textDecoration: "none", fontFamily: "Open Sans" }}
+                className="pa0 ma0 black-80 fw9"
+              >
+                {mi.text}
+              </p>
             </Link>
           ))}
         </div>

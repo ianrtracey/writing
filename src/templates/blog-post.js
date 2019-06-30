@@ -20,22 +20,22 @@ class BlogPostTemplate extends React.Component {
         />
         <h1
           style={{
-            marginTop: rhythm(1),
-            marginBottom: 0,
+            fontFamily: "Raleway",
           }}
+          className="f2 fw6 pa0 ma0"
         >
           {post.frontmatter.title}
         </h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-          }}
-        >
+        <p style={{ fontFamily: "Open Sans" }} className="pv2">
           {post.frontmatter.date}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div
+          style={{
+            fontFamily: "Montserrat",
+          }}
+          className="lh-copy fw4 f4"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
         <hr
           style={{
             marginBottom: rhythm(1),
