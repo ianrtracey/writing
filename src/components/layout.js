@@ -12,9 +12,9 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
 
     const menuItems = [
-      { text: "HOME", link: "/" },
-      { text: "ABOUT", link: "/writing" },
+      { text: "WRITING", link: "/" },
       { text: "SPEAKING", link: "/speaking" },
+      { text: "ABOUT", link: "/about" },
       { text: "CONTACT", link: "/contact" },
     ]
 
@@ -38,18 +38,15 @@ class Layout extends React.Component {
           </Link>
         </h1>
         <div className="f4 tc pa2 black-50">Absurdity for an absurd world</div>
-        <div className="mw6 center flex justify-between mt3 sans-serif fw4">
+        <div className="mw6 flex center justify-between ph4 mt3 fw3">
           {menuItems.map(mi => (
             <Link
               style={{ textDecoration: "none", fontFamily: "Raleway" }}
+              className="black-90 link dim"
+              activeClassName={"black-40"}
               to={mi.link}
             >
-              <p
-                style={{ textDecoration: "none", fontFamily: "Open Sans" }}
-                className="pa0 ma0 black-80 fw9"
-              >
-                {mi.text}
-              </p>
+              {mi.text}
             </Link>
           ))}
         </div>

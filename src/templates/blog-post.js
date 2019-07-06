@@ -22,11 +22,11 @@ class BlogPostTemplate extends React.Component {
           style={{
             fontFamily: "Raleway",
           }}
-          className="f2 fw6 pa0 ma0"
+          className="f2 fw6 pa0 ma0 tc"
         >
           {post.frontmatter.title}
         </h1>
-        <p style={{ fontFamily: "Open Sans" }} className="pv2">
+        <p style={{ fontFamily: "Open Sans" }} className="pv3 tc">
           {post.frontmatter.date}
         </p>
         <div
