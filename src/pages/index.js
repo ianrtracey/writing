@@ -17,15 +17,15 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
+            <div key={node.fields.slug} className="pv3">
               <h3
                 style={{
-                  fontFamily: "Raleway",
+                  fontFamily: "Open Sans",
                 }}
                 className="f3 sans-serif ma0 pb1 black"
               >
                 <Link
-                  className="black-90 f3"
+                  className="black-90 f3 link dim"
                   style={{ boxShadow: `none` }}
                   to={node.fields.slug}
                 >
@@ -35,20 +35,12 @@ class BlogIndex extends React.Component {
               <div className="mb1">
                 <small
                   style={{
-                    fontFamily: "Montserrat",
+                    fontFamily: "Open Sans",
                   }}
                 >
                   {node.frontmatter.date}
                 </small>
               </div>
-              <p
-                style={{
-                  fontFamily: "Montserrat",
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
               {/* <Link to={node.fields.slug}>
                 <p className="fl black-60 link dim">Read more →</p>
               </Link> */}
