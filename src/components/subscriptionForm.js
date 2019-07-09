@@ -1,4 +1,5 @@
 import React from "react"
+import { setSubscribed } from "../utils/storage"
 
 const encode = data =>
   Object.keys(data)
@@ -44,6 +45,7 @@ export default class SubscriptionForm extends React.Component {
       this.setState({
         isSubmitted: true,
       })
+      setSubscribed()
     } catch (e) {
       this.setState({
         disabled: false,

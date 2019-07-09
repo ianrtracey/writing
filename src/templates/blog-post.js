@@ -6,12 +6,53 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import SubscriptionFrom from "../components/subscriptionForm"
+import { getSubscribed } from "../utils/storage"
 
 class BlogPostTemplate extends React.Component {
+  renderFooter() {
+    const { previous, next } = this.props.pageContext
+
+    const subscriptionSection = (
+      <div>
+        <p
+          style={{ fontFamily: "Open Sans" }}
+          className="f3 fw7 mt4 mb0 pb2 black-70"
+        >
+          Stay updated
+        </p>
+        <SubscriptionFrom />
+      </div>
+    )
+
+    const relatedPosts = [previous, next].filter(x => x != null)
+    const relatedPostsSection = (
+      <div>
+        <p style={{ fontFamily: "Open Sans" }} className="f3 fw6 mt5">
+          Other popular posts
+        </p>
+        <div className="tc">
+          {relatedPosts.map(post => (
+            <p className="f5 fw4 pv3 ma0 pb1 black link dim">
+              <Link to={post.fields.slug} style={{ boxShadow: `none` }}>
+                {post.frontmatter.title}
+              </Link>
+            </p>
+          ))}
+        </div>
+      </div>
+    )
+
+    return (
+      <div className="pv4 tc">
+        {!getSubscribed() && subscriptionSection}
+        {relatedPostsSection}
+      </div>
+    )
+  }
+
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -43,42 +84,7 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <div className="pv4 tc">
-          <p
-            style={{ fontFamily: "Open Sans" }}
-            className="f3 fw7 mt4 mb0 pb2 black-70"
-          >
-            Stay updated
-          </p>
-          <SubscriptionFrom />
-          <p style={{ fontFamily: "Open Sans" }} className="f3 fw6 mt5">
-            Other popular posts
-          </p>
-        </div>
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+        {this.renderFooter()}
       </Layout>
     )
   }
