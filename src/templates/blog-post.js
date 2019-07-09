@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import SubscriptionFrom from "../components/subscriptionForm"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -49,29 +50,7 @@ class BlogPostTemplate extends React.Component {
           >
             Stay updated
           </p>
-          <p className="lh-copy pa0 ma0 black-70">
-            You will only get an email when I write something new
-          </p>
-          <div>
-            <form className="measure center">
-              <div className="mt3">
-                <input
-                  className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
-                  type="email"
-                  name="email-address"
-                  placeholder="youremail@here.com"
-                  id="email-address"
-                />
-              </div>
-              <div className="pv3">
-                <input
-                  className="b fr ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
-                  type="submit"
-                  value="Subscribe"
-                />
-              </div>
-            </form>
-          </div>
+          <SubscriptionFrom />
           <p style={{ fontFamily: "Open Sans" }} className="f3 fw6 mt5">
             Other popular posts
           </p>
