@@ -56,6 +56,13 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <Link
+          style={{ boxShadow: "none", textDecoration: "none" }}
+          class="f4 br-pill ph3 pv2 mb2 dib b--black black fw5 ba bg-transparent mb4"
+          to="/"
+        >
+          ←
+        </Link>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
