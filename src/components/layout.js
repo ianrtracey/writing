@@ -13,39 +13,26 @@ const menuItems = [
   { text: "Contact", link: "/contact" },
 ]
 
-const MenuModal = ({ closeHandler }) => (
+const MenuModal = () => (
   <div
     style={{ height: "100vh", width: "100%", zIndex: 1 }}
-    className="flex absolute top-0 left-0 bg-white-90"
+    className="absolute inherit top-0 left-0 bg-white-90"
   >
-    <div
-      className="pa4 absolute flex f3 fw9 mid-gray"
-      style={{
-        width: "100%",
-        justifyContent: "flex-end",
-        fontFamily: "Open Sans",
-      }}
-    >
-      <button
-        onClick={closeHandler}
-        className="fw4 input-reset ba white bg-black-70 pa2"
-      >
-        close
-      </button>
-    </div>
-    <div style={{ fontFamily: "Open Sans" }} className="pa4 mt6">
-      {menuItems.map(mi => (
-        <div className="pv3">
-          <Link
-            to={mi.link}
-            style={{ textDecoration: "none", boxShadow: "none" }}
-            className="link dim f2 pv2 fw9 mid-gray"
-            activeClassName="link dim f2 pv2 fw8 black-20"
-          >
-            {mi.text}
-          </Link>
-        </div>
-      ))}
+    <div className="flex justify-center">
+      <div style={{ fontFamily: "Open Sans" }} className="pa4 mt6 tc">
+        {menuItems.map(mi => (
+          <div className="pv3">
+            <Link
+              to={mi.link}
+              style={{ textDecoration: "none", boxShadow: "none" }}
+              className="grow pointer link dim f2 pv2 fw6 black-90"
+              activeClassName="black-30"
+            >
+              {mi.text}
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   </div>
 )
@@ -71,6 +58,24 @@ class Layout extends React.Component {
     })
   }
 
+  renderMenuButton = () => {
+    const { shouldShowMenuModal } = this.state
+    const onClickHandler = shouldShowMenuModal
+      ? this.closeMenuModal
+      : this.showMenuModal
+    const text = shouldShowMenuModal ? "close" : "menu"
+    return (
+      <div>
+        <button
+          onClick={onClickHandler}
+          className="f4 fw5 input-reset ba b--black bg-transparent pa2 grow pointer"
+        >
+          {text}
+        </button>
+      </div>
+    )
+  }
+
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
@@ -81,42 +86,26 @@ class Layout extends React.Component {
           fontFamily: "Raleway",
         }}
       >
-        <h1 className="f1 sans-serif fw7 tc pa0 ma0 link dim">
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-              fontFamily: "Raleway",
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
-        <div className="f4 tc pa2 black-50">Absurdity for an absurd world</div>
-        <div className="mw6 flex justify-center ph4 mt3 fw3 grow pointer">
-          <div>
-            <button
-              onClick={this.showMenuModal}
-              className="f4 fw5 input-reset ba b--black bg-transparent pa2"
-            >
-              menu
-            </button>
-          </div>
-          {/* {menuItems.map(mi => (
+        <div className="flex align-center justify-between">
+          <h1 className="f2 sans-serif fw7 tc pa0 ma0 link dim">
             <Link
               style={{
-                textDecoration: "none",
-                fontFamily: "Open Sans",
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+                fontFamily: "Raleway",
               }}
-              className="black-90 link dim"
-              activeClassName={"black-30"}
-              to={mi.link}
+              to={`/`}
             >
-              {mi.text}
+              {title}
             </Link>
-          ))} */}
+          </h1>
+          <div
+            className="mw6 flex justify-center fw3 grow pointer"
+            style={{ zIndex: 1 }}
+          >
+            {this.renderMenuButton()}
+          </div>
         </div>
       </div>
     )
