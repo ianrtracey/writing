@@ -34,31 +34,17 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div
-      style={{
-        display: `flex`,
-        marginBottom: rhythm(2.5),
-      }}
-    >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
-        style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
+    <div style={{ fontFamily: "Open Sans" }}>
+      <p className="f3 fw6">About Me</p>
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
+        I live and work in San Francisco where I'm focused on building things
+        and growing businesses.
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
+        <a
+          style={{ textDecoration: "none", boxShadow: "none" }}
+          href={`https://twitter.com/${social.twitter}`}
+        >
+          You should follow me on Twitter
         </a>
       </p>
     </div>
