@@ -37,8 +37,8 @@ const Bio = () => {
     <div style={{ fontFamily: "Open Sans" }}>
       <p className="f3 fw6">About Me</p>
       <p>
-        I live and work in San Francisco where I'm focused on building things
-        and growing businesses.
+        Hey, I'm Ian. I live and work in San Francisco where I'm focused on
+        building things and growing businesses.
         {` `}
         <a
           style={{ textDecoration: "none", boxShadow: "none" }}
