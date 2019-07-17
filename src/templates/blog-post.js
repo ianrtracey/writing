@@ -11,7 +11,6 @@ import { getSubscribed } from "../utils/storage"
 class BlogPostTemplate extends React.Component {
   renderFooter() {
     const { previous, next } = this.props.pageContext
-
     const subscriptionSection = (
       <div>
         <p
@@ -44,6 +43,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <div className="pv4 tc">
+        <Bio />
         {!getSubscribed() && subscriptionSection}
         {relatedPostsSection}
       </div>
@@ -83,7 +83,7 @@ class BlogPostTemplate extends React.Component {
           style={{
             fontFamily: "Montserrat",
           }}
-          className="lh-copy fw4 f4"
+          className="lh-copy fw4 f4-ns f5"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
         <hr

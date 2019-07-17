@@ -10,7 +10,6 @@ const menuItems = [
   { text: "Writing", link: "/" },
   { text: "Speaking", link: "/speaking" },
   { text: "About", link: "/about" },
-  { text: "Contact", link: "/contact" },
 ]
 
 const MenuModal = () => (
