@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import SubscriptionFrom from "../components/subscriptionForm"
 import { getSubscribed } from "../utils/storage"
+import { readingTimeInMinutes } from "../utils/reading"
 
 class BlogPostTemplate extends React.Component {
   renderFooter() {
@@ -45,9 +46,13 @@ class BlogPostTemplate extends React.Component {
       <div className="pv4 tc">
         <Bio />
         {!getSubscribed() && subscriptionSection}
-        {relatedPostsSection}
       </div>
     )
+  }
+
+  getReadingTime = () => {
+    const post = this.props.data.markdownRemark
+    return readingTimeInMinutes(post.html)
   }
 
   render() {
@@ -77,7 +82,7 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.title}
         </h1>
         <p style={{ fontFamily: "Open Sans" }} className="pv3 tc-ns black-60">
-          {post.frontmatter.date} • 4 min read
+          {post.frontmatter.date} • {this.getReadingTime()} min read
         </p>
         <div
           style={{
