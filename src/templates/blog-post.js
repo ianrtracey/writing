@@ -14,10 +14,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
     const subscriptionSection = (
       <div>
-        <p
-          style={{ fontFamily: "Open Sans" }}
-          className="f3 fw7 mt4 mb0 pb2 black-70"
-        >
+        <p className="f3 fw6 lh-title" style={{ fontFamily: "Open Sans" }}>
           Stay updated
         </p>
         <SubscriptionFrom />
@@ -25,25 +22,35 @@ class BlogPostTemplate extends React.Component {
     )
 
     const relatedPosts = [previous, next].filter(x => x != null)
-    const relatedPostsSection = (
-      <div>
-        <p style={{ fontFamily: "Open Sans" }} className="f3 fw6 mt5">
-          Other popular posts
-        </p>
-        <div className="tc">
-          {relatedPosts.map(post => (
-            <p className="f5 fw4 pv3 ma0 pb1 black link dim">
-              <Link to={post.fields.slug} style={{ boxShadow: `none` }}>
-                {post.frontmatter.title}
+    const articleSwitcher = (
+      <div
+        className="flex items-between mb4"
+        style={{ fontFamily: "Open Sans" }}
+      >
+        {previous && (
+          <div className="tl">
+            <p className="f5 fw6 pv3 ma0 pb1 black link dim">
+              <Link to={previous.fields.slug} style={{ boxShadow: `none` }}>
+                ←{previous.frontmatter.title}
               </Link>
             </p>
-          ))}
-        </div>
+          </div>
+        )}
+        {next && (
+          <div className="tr">
+            <p className="f5 fw6 pv3 ma0 pb1 black link dim">
+              <Link to={next.fields.slug} style={{ boxShadow: `none` }}>
+                {next.frontmatter.title}→
+              </Link>
+            </p>
+          </div>
+        )}
       </div>
     )
 
     return (
       <div className="pv4 tc">
+        {articleSwitcher}
         <Bio />
         {!getSubscribed() && subscriptionSection}
       </div>
@@ -77,7 +84,7 @@ class BlogPostTemplate extends React.Component {
             fontFamily: "Open Sans",
             fontSize: "1.75em",
           }}
-          className="f1 fw6 pa0 ma0 tc-ns lh-title"
+          className="f1 fw6 pa0 ma0 tc-ns lh-headline"
         >
           {post.frontmatter.title}
         </h1>
@@ -88,7 +95,7 @@ class BlogPostTemplate extends React.Component {
           style={{
             fontFamily: "Montserrat",
           }}
-          className="lh-copy fw4 f4-ns f5"
+          className="lh-copy fw4 f4"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
         <hr
