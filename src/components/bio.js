@@ -35,8 +35,8 @@ const Bio = () => {
   const { author, social } = data.site.siteMetadata
   return (
     <div style={{ fontFamily: "Open Sans" }}>
-      <p className="f3 fw6">About Me</p>
-      <p>
+      <p className="f3 fw6 lh-title">About Me</p>
+      <p className="lh-copy">
         Hey, I'm Ian. I live and work in San Francisco where I'm focused on
         building things and growing businesses.
         {` `}

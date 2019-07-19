@@ -61,7 +61,7 @@ export default class SubscriptionForm extends React.Component {
           <p className="f4 tc mt2">You're amazing 🙌</p>
         ) : (
           <div>
-            <p className="lh-copy pa0 ma0 black-70">
+            <p style={{ fontFamily: "Open Sans" }} className="lh-copy pa0 ma0">
               You will only get an email when I write something new
             </p>
             <form
