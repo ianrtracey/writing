@@ -8,6 +8,7 @@ const data = [
     event: "Hack Arizona 2019 Keynote Address",
     date: "January 2019",
     location: "Tucson, AZ",
+    watchLink: "https://youtu.be/bBXhoFhyYZc?t=937",
   },
   {
     title: "Intro to GraphQL: The Future Language of the Web",
