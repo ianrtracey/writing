@@ -46,8 +46,6 @@ class Layout extends React.Component {
     this.setState({
       shouldShowMenuModal: true,
     })
-    document.documentElement.style.overflow = "hidden"
-    document.body.scroll = "no"
   }
 
   closeMenuModal = e => {
