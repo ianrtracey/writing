@@ -34,8 +34,11 @@ exports.createPages = ({ graphql, actions }) => {
     const posts = result.data.allMarkdownRemark.edges
 
     posts.forEach((post, index) => {
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node
-      const next = index === 0 ? null : posts[index - 1].node
+      const previousIndex = index === 0 ? posts.length - 1 : index - 1
+      const nextIndex = (index + 1) % posts.length
+
+      const previous = posts[previousIndex].node
+      const next = posts[nextIndex].node
 
       createPage({
         path: post.node.fields.slug,

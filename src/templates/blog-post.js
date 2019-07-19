@@ -21,7 +21,6 @@ class BlogPostTemplate extends React.Component {
       </div>
     )
 
-    const relatedPosts = [previous, next].filter(x => x != null)
     const articleSwitcher = (
       <div
         className="flex items-between mb4"
