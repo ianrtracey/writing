@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const data = [
   {
@@ -53,13 +54,13 @@ const TalkLink = ({ talk }) => {
     return null
   }
   return (
-    <a
+    <OutboundLink
       style={{ textDecoration: "none", boxShadow: "none" }}
       href={link}
       className="fr fw6 pointer grow link"
     >
       {text}
-    </a>
+    </OutboundLink>
   )
 }
 const TalkList = () => (

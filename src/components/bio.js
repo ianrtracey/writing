@@ -8,6 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 import { rhythm } from "../utils/typography"
 
@@ -40,12 +41,12 @@ const Bio = () => {
         Hey, I'm Ian. I live and work in San Francisco where I'm focused on
         building things and growing businesses.
         {` `}
-        <a
+        <OutboundLink
           style={{ textDecoration: "none", boxShadow: "none" }}
           href={`https://twitter.com/${social.twitter}`}
         >
           You should follow me on Twitter
-        </a>
+        </OutboundLink>
       </p>
     </div>
   )

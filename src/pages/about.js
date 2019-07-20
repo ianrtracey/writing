@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const SectionHeader = ({ children, text }) => (
   <div className="pv4 tc">
@@ -15,7 +16,7 @@ const SectionLinks = ({ items }) => (
   <div>
     {items.map((item, i) => (
       <div key={i} className="pv1">
-        <a
+        <OutboundLink
           href={item.link}
           style={{
             fontFamily: "Open Sans",
@@ -25,7 +26,7 @@ const SectionLinks = ({ items }) => (
           className="f4 grow pointer tc link dim fw6"
         >
           {item.text}
-        </a>
+        </OutboundLink>
       </div>
     ))}
   </div>
