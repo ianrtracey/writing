@@ -27,7 +27,12 @@ class BlogPostTemplate extends React.Component {
         style={{ fontFamily: "Open Sans" }}
       >
         {previous && (
-          <div className="tl">
+          <div
+            className="tl"
+            style={{
+              width: "50%",
+            }}
+          >
             <p className="f5 fw6 pv3 ma0 pb1 black link dim">
               <Link to={previous.fields.slug} style={{ boxShadow: `none` }}>
                 ←{previous.frontmatter.title}
@@ -36,7 +41,12 @@ class BlogPostTemplate extends React.Component {
           </div>
         )}
         {next && (
-          <div className="tr">
+          <div
+            className="tr"
+            style={{
+              width: "50%",
+            }}
+          >
             <p className="f5 fw6 pv3 ma0 pb1 black link dim">
               <Link to={next.fields.slug} style={{ boxShadow: `none` }}>
                 {next.frontmatter.title}→
