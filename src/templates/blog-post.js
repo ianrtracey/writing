@@ -102,9 +102,9 @@ class BlogPostTemplate extends React.Component {
         </p>
         <div
           style={{
-            fontFamily: "Montserrat",
+            fontFamily: "Open Sans",
           }}
-          className="lh-copy fw4 f4"
+          className="lh-copy"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
         <hr
