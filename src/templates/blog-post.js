@@ -73,7 +73,7 @@ class BlogPostTemplate extends React.Component {
   }
 
   getFullPath = path => {
-    const host = window.location.hostname
+    const host = `www.ianrtracey.com`
     return `${host}/${path}`
   }
 
