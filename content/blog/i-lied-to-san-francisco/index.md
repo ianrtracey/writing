@@ -2,9 +2,11 @@
 title: I Lied to San Francisco about being a Designer and You Should Too
 date: "2018-07-01T00:00:00"
 description: "The most influential brands in the world have something in common: a strong and inspiring mission statement."
+featuredImage: "./header.jpeg"
 ---
 
-![motorycle in a design firm](./header.jpeg)
+
+![motorcycle in a design firm](./header.jpeg)
 
 The elevator doors open to the tune of atmospheric drums against the backdrop of light chatter that ricochets off what seems to be a chic office themed as a mechanic shop. Lights flood the lobby, creating shadowy figures that circle above from the upstairs loft. Striped shirts, clear framed-glasses, leather shoes and painters caps speckle the crowd which is clustered around plastered pencil sketching on one wall, motorcycle frames hanging from the back ceiling and the buzzing cocktail bar right up front.
 

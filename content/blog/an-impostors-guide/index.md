@@ -2,6 +2,7 @@
 title: The Impostor’s Guide to Work and Suffering
 date: "2018-06-09T00:00:00"
 description: "The most influential brands in the world have something in common: a strong and inspiring mission statement."
+featuredImage: "./header.jpeg"
 ---
 
 ![mask](./header.jpeg)

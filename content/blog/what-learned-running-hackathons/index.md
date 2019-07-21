@@ -2,6 +2,7 @@
 title: What I Learned After 3 Years of Running Hackathons
 date: "2017-02-06T00:00:00"
 description: "The most influential brands in the world have something in common: a strong and inspiring mission statement."
+featuredImage: "./header.jpeg"
 ---
 
 ![header image](./header.jpeg)

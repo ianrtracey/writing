@@ -2,6 +2,7 @@
 title: You're a Professional
 date: "2018-12-13T00:00:00"
 description: "'Be confident'. It’s one of the most tried and true maxims we are all told at some point in our lives and it’s probably one of the least effective."
+featuredImage: "./header.jpeg"
 ---
 ![header image](./header.jpeg)
 

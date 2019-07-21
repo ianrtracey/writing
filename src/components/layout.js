@@ -19,8 +19,8 @@ const MenuModal = () => (
   >
     <div className="flex justify-center">
       <div style={{ fontFamily: "Open Sans" }} className="pa4 mt6 tc">
-        {menuItems.map(mi => (
-          <div className="pv3">
+        {menuItems.map((mi, i) => (
+          <div className="pv3" key={i}>
             <Link
               to={mi.link}
               style={{ textDecoration: "none", boxShadow: "none" }}

@@ -2,7 +2,10 @@
 title: How We Are Trying to Change the Southwest With a Hackathon
 date: "2015-01-14T00:00:00"
 description: "The most influential brands in the world have something in common: a strong and inspiring mission statement."
+featuredImage: "./header.jpeg"
 ---
+
+![photo of tucson az](./header.jpeg)
 
 _The sputtering pour of the espresso machine, taking refuge in a hidden Starbucks tucked away from the sidewalk, swirls throughout my sluggish morning. It’s a brisk Saturday morning for southern Arizona in October and I am exhausted. The agenda already looks fierce today sprawled upon the white abyss of my iPhone calendar: 5 phone calls, 2 sponsor meetings and a team recap to wrap up the day. The earbuds go in, the saddle bag goes over my shoulder and I’m off. Here’s to building the future._
 

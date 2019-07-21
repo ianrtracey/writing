@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Helmet from "react-helmet"
 import { rhythm, scale } from "../utils/typography"
 import SubscriptionFrom from "../components/subscriptionForm"
 import { getSubscribed } from "../utils/storage"
@@ -71,15 +72,20 @@ class BlogPostTemplate extends React.Component {
     return readingTimeInMinutes(post.html)
   }
 
+  getFullPath = path => {
+    const host = window.location.hostname
+    return `${host}/${path}`
+  }
+
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
-
+    const slug = this.props.pageContext.slug
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Link
           style={{ boxShadow: "none", textDecoration: "none" }}
-          class="f4 br-pill ph3 pv2 mb2 dib b--black black fw5 ba bg-transparent mb4"
+          className="f4 br-pill ph3 pv2 mb2 dib b--black black fw5 ba bg-transparent mb4"
           to="/"
         >
           ←
@@ -87,6 +93,10 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          image={this.getFullPath(
+            post.frontmatter.featuredImage.childImageSharp.sizes.src
+          )}
+          url={this.getFullPath(slug)}
         />
         <h1
           style={{
@@ -137,6 +147,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        featuredImage {
+          childImageSharp {
+            sizes(maxWidth: 630) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
   }
