@@ -1,7 +1,7 @@
 ---
 title: How We Are Trying to Change the Southwest With a Hackathon
 date: "2015-01-14T00:00:00"
-description: "The most influential brands in the world have something in common: a strong and inspiring mission statement."
+description: "Arizona is experiencing one of the greatest fundamental transformations in the state’s history — and it is close to blowing it."
 featuredImage: "./header.jpeg"
 ---
 
@@ -22,6 +22,5 @@ It’s not easy starting your state’s first major collegiate hackathon, but wi
 Here’s to being insane enough to start a hackathon.
 
 Here’s to building the future.
-
 
 _[Hack Arizona](http://hackarizona.org) is a hackathon at the University of Arizona from March 6th-8th featuring 400+ of the most motivated, passionate and talented student technologists from across the country to participate in 36 hours of agile software, hardware, health and sustainability projects._

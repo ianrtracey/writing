@@ -1,12 +1,13 @@
 ---
 title: You're a Professional
 date: "2018-12-13T00:00:00"
-description: "'Be confident'. It’s one of the most tried and true maxims we are all told at some point in our lives and it’s probably one of the least effective."
+description: "The world needs you to be confident. In our complex, rapidly evolving society with a scary and uncertain future, people with confidence are the ones that hold back the chaos of life from tearing us apart."
 featuredImage: "./header.jpeg"
 ---
+
 ![header image](./header.jpeg)
 
-Be confident. It’s one of the most tried and true maxims we are all told at some point in our lives and it’s probably one of the least effective.
+_Be confident_. It’s one of the most tried and true maxims we are all told at some point in our lives and it’s probably one of the least effective.
 
 Imagine you’re walking up to the microphone to say your first few words despite terrible stage fright or maybe you’re walking through the door to an anxious first date with someone you think is way out of your league -and then I come up to you and whisper in your ear: “Hey, remember to be confident.”
 

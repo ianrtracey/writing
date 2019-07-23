@@ -1,10 +1,9 @@
 ---
 title: I Lied to San Francisco about being a Designer and You Should Too
 date: "2018-07-01T00:00:00"
-description: "The most influential brands in the world have something in common: a strong and inspiring mission statement."
+description: "We need more design thinking in every part of the process. Rather than thinking about design and development stages, let’s start thinking about design and development harmony."
 featuredImage: "./header.jpeg"
 ---
-
 
 ![motorcycle in a design firm](./header.jpeg)
 

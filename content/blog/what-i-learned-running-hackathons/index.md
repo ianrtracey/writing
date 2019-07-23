@@ -1,7 +1,7 @@
 ---
 title: What I Learned After 3 Years of Running Hackathons
 date: "2017-02-06T00:00:00"
-description: "The most influential brands in the world have something in common: a strong and inspiring mission statement."
+description: "Even after 3 years, it feels like we have just gotten started. There is still so much more work to do."
 featuredImage: "./header.jpeg"
 ---
 
@@ -18,7 +18,7 @@ My group of 4 friends and I had gone to PennApps to meet a few of its organizers
 
 ![another image of pennapps](./2.jpeg)
 
-I didn’t wake up one day and think *“Man, you know what? I am going to spend the next three years going to hackathons, throwing hackathons, analyzing hacker culture, fundraising, managing an organizing team, working on registration systems, worrying about budgets and attendance numbers and, most importantly, sometimes failing at all of the above”*. It just sort of happened.
+I didn’t wake up one day and think _“Man, you know what? I am going to spend the next three years going to hackathons, throwing hackathons, analyzing hacker culture, fundraising, managing an organizing team, working on registration systems, worrying about budgets and attendance numbers and, most importantly, sometimes failing at all of the above”_. It just sort of happened.
 
 At the University of Arizona, I saw a problem: students were not engaging with technology and working on projects in a meaningful way outside of the classroom. I was fortunate enough in college to have an incredible support network of friends, colleagues and mentors that I could discuss ideas with, prototype solutions, hack together side projects, and conduct experiments. I didn’t see a platform on campus or anywhere near campus that offered a similar experience to what I had been fortunate to experience, so I somehow convinced 4 other equally-insane people that we should try and start something on campus to do something about it.
 After studying various solutions to the problem, we landed on the hackathon as a model that would work for our audience (college students in the southwest). And just like that, in October of 2014, the founding Hack Arizona team was assembled and the Hack Arizona organization was born.
@@ -28,12 +28,12 @@ After studying various solutions to the problem, we landed on the hackathon as a
 This past January, over 800 students and 250+ mentors and sponsors from across the country joined us in Tucson, AZ for our 3rd annual Hack Arizona. As a graduating senior, this was my last hackathon where I served as Hack Arizona’s Director of Sponsorship and Chief Organizer and I feel that some reflection is in order. I have learned a lot over 3 years of hackathons. I have been humbled and inspired by the community and I feel that Hack Arizona has been the most rewarding thing I have ever done. It has truly been a privilege to serve the hacker community and to have the opportunity to watch something as seemingly simplistic as a hackathon change the lives and trajectories of so many people. My aim in writing this piece is to both inspire those that haven’t been to a hackathon to go to one and to open a dialogue with other hackathon organizers (experienced or novice) about strategies for starting hackathons and fostering hacker culture in your own community. I have also realized that a majority of what I have learned can be applied to other entrepreneurial endeavors, so even if hackathons aren’t really your style, I am hoping you can still get a lot out of this too.
 
 ## It’s never about you, it’s about the mission
+
 ![header image](./4.jpeg)
 
 I have seen too many founders of non-profits and startups let the newfound attention after starting something go their heads. Yes, starting a major collegiate hackathon is exciting. For the first time in your life lots of people will want to talk to you: reporters, higher-ups at major tech companies, your professors and your colleagues. It can be easy to become absorbed with how the thing you started changes the way people perceive you but it’s incredibly important to remember that the maelstrom of activity and attention is not about you; it’s about your mission.
 
 ![header image](./5.jpeg)
-
 
 Throughout my time at Hack Arizona I was a servant to the mission and to the community I served. Speaking candidly, it wasn’t always easy to remain focused on the mission. I recall a distinct moment during the 2nd Hack Arizona where an attendee chastised me passionately about how my team and I had ‘cheaped out’ on the condiments for our gourmet sandwich bar after the organizing team and I toiled over the past 6 months to raise enough money to provide free food for the weekend for all of our hackers. Yes, at that point in time, I felt a little disconnected from the community as it was hard to swallow the lecturing hacker’s fervent rhetoric, but this instance sticks out because it is a rare occasion and in most circumstances the community I have worked with over the past 3 years have been inspiring, humble, helpful and grateful. The good times outweigh the bad 10 to 1.
 
@@ -42,6 +42,7 @@ Throughout my time at Hack Arizona I was a servant to the mission and to the com
 I learned that if you can detach yourself from your mission and orient yourself both hierarchically and mentally as an actor in the pursuit of that mission — you will be better off. When you become an actor in a mission rather than linked to the mission itself you create a larger stage for others to join and allow new members to become actors both internally and through partnership. It’s hard to convince others to join you in tackling an ambitious goal, with a low chance of success and to do it all for free. Just as you would expect your team to own the portions of your organization that they are responsible for in order to make the organization successful, it’s important to let them own their portions of the spotlight too and to give them the space to grow into the leaders you know that they can become.
 
 ## Seriously, focus on your community
+
 ![header image](./7.jpeg)
 
 We knew from the beginning that our community (based in Tucson, AZ) and the surrounding southwest region didn’t need a competitive hackathon. Competitive hackathons with high-stake prizes, wicked talented developers and a mountain of hype work well for some schools but our hackers don’t get enough value from those sort of events. Our hacker community is nascent and we knew from the start that, even if we could somehow make a hackathon work here in Tucson, we would have to move a big amount of local organizational and bureaucratical inertia to make it happen.
@@ -56,7 +57,6 @@ Every member of the Hack Arizona organizing team is a direct end-user of what we
 4. A cohesive brand and mission that the community can rally around, feel a part of and contribute to (during or after the hackathon weekend).
 
 ![header image](./9.jpeg)
-
 
 To accomplish these 4 primary objectives we had to engineer our event to ensure that we satisfied those base level requirements before expanding into features of the event that would distinguish us. To build the best platform to showcase the work of hackers, we de-emphasized competition by giving prizes and awards to more teams in more diverse categories, we hired full-fledged media teams to showcase a majority of the projects and we used project submission software that allowed for projects to be public, shareable and accessible by anyone online. We provided more first-class opportunities for students by going after high-quality sponsors (many of which had never recruited at our school before) and giving them with a great sponsorship experience. We promoted collaboration by giving students lots of space in our 5-floor venue to spread out (no fold-out-tables-in-a-gym setup here) as well time before the event to team up and meet new people during our matchmaking activities. Lastly, we built a cohesive brand through lots of time and energy refining our mission, communicating it to as many people as we could before and during the event and making sure that hackers felt as though they were a part of it by providing them with the best experience we possibly could.
 
