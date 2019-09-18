@@ -1,7 +1,7 @@
 ---
 title: I had Dinner with Death
-date: "2019-09-18T00:00:00"
-description: "We need more design thinking in every part of the process. Rather than thinking about design and development stages, let’s start thinking about design and development harmony."
+date: "2019-09-17T00:00:00"
+description: "While we cant bring back the ones we’ve lost to alleviate our pain, we can always pay respect to the cosmic tightrope stunt we call life."
 featuredImage: "./header.jpeg"
 ---
 
