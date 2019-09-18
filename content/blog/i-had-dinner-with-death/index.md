@@ -39,14 +39,14 @@ So on a warm summer Saturday night, surrounded by a group of friends and the sme
 
 I learned so much about my friends, myself and Death that night. We wandered through talking about the impact of Death on the people we love. We explored how each one of us wants to die and we questioned what the important parts of our lives actually are.
 
-We had invited Death to our table as the enemy but Death is agnostic. Spending an evening with Death didn’t diminish my grief but the dinner help use Death to contrast the love and incredible life that's always there beneath my nose, even when I don’t realize it. I left that evening with a newfound take on what it means to be alive.
+We had invited Death to our table as the enemy but Death is agnostic. Spending an evening with Death didn’t diminish my grief but the dinner did help by using Death to contrast the love and incredible life that's always there beneath my nose, even when I don’t realize it. I left that evening with a newfound take on what it means to be alive.
 
-While we can't bring back the ones we’ve lost to alleviate our pain, we can always pay respect to the cosmic tightrope walk we call life. A performance that is full of terror, excitement, joy and pain. A performance that is equal parts order and chaos. A performance where we discover each other, find ourselves and hopefully learn as much as we can along the way.
+While we can't bring back the ones we’ve lost to alleviate our pain, we can always pay respect to the walk across the cosmic tightrope we call life. A performance that is full of terror, excitement, joy and pain. A performance that is equal parts order and chaos. A performance where we discover each other, find ourselves and hopefully learn as much as we can along the way.
 
 And that’s certainly a performance worth living and dying for.
 
 Love you, Dad.
-
+s
 <br/>
 <br/>
 
