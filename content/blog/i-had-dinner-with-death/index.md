@@ -46,7 +46,6 @@ While we can't bring back the ones we’ve lost to alleviate our pain, we can al
 And that’s certainly a performance worth living and dying for.
 
 Love you, Dad.
-s
 <br/>
 <br/>
 
