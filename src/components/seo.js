@@ -71,8 +71,8 @@ function SEO({ lang, description, meta, title, url, image }) {
           content: `summary`,
         },
         {
-          name: `twitter:creator`,
-          content: `@site.siteMetadata.social.twiter`,
+          name: `twitter:site`,
+          content: `ianrtracey.com`,
         },
         {
           name: `twitter:title`,
@@ -80,7 +80,11 @@ function SEO({ lang, description, meta, title, url, image }) {
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: description,
+        },
+        {
+          name: "twitter:image",
+          content: image,
         },
       ].concat(meta)}
     />
