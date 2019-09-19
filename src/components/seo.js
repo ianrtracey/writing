@@ -72,7 +72,7 @@ function SEO({ lang, description, meta, title, url, image }) {
         },
         {
           name: `twitter:site`,
-          content: `ianrtracey.com`,
+          content: `@ianrtracey`,
         },
         {
           name: `twitter:title`,
