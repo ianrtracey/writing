@@ -1,5 +1,5 @@
 ---
-title: You're Company's Mission Probably Sucks
+title: Your Company's Mission Probably Sucks
 date: "2018-11-20T00:00:00"
 description: "The most influential brands in the world have something in common: a strong and inspiring mission statement."
 featuredImage: "./header.png"
